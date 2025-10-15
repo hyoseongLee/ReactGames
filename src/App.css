@@ -33,13 +33,11 @@
   .box h1 {
     font-size: 24px;
     margin: 0;
-    flex-shrink: 0;
   }
   
   .box h2 {
     font-size: 18px;
     margin: 10px 0;
-    flex-shrink: 0;
   }
   
   .main {
@@ -66,7 +64,7 @@
     color: black;
   }
   
-/** 어플리케이션 css **/
+/** 동적 UI **/
   @media (max-width: 768px) {
     .main {
       flex-direction: column;
