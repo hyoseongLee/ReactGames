@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+
+.box {
+    border: 1px solid black;
+    width: 500px;
+    text-align: center;
+}
+
+.item-img {
+    width: 200px;
+}
