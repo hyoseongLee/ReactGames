@@ -30,25 +30,38 @@ const choice = {
 function App() {
   const [userSelect, setUserSelect] = useState(null);
   const [computerSelect, setComputerSelect] = useState(null);
+  const [result, setResult] = useState(null);
 
   const play = (userChoice) => {
     setUserSelect(choice[userChoice]);
     let computerChoice = randomChoice();
-    setComputerSelect(computerChoice)
+    setComputerSelect(computerChoice);
+    setResult(judgement(choice[userChoice], computerChoice));
   };
-  git remote add origin https://github.com/hyoseongLee/ReactGames.git
+
   const randomChoice = () => {
     let itemArray = Object.keys(choice); // 객체의 키값만 뽑아서 어레이로 만들어주는 함수다.
-    let randomItem = Math.floor(Math.random()*itemArray.length);
-    let final = itemArray[randomItem]
+    let randomItem = Math.floor(Math.random() * itemArray.length);
+    let final = itemArray[randomItem];
     return choice[final];
   };
 
+  const judgement = (user, computer) => {
+    if (user.name === computer.name) {
+      return "tie";
+    } else if (user.name === "Rock")
+      return computer.name === "Scissor" ? "win" : "lose";
+    else if (user.name === "Scissor")
+      return computer.name === "Paper" ? "win" : "lose";
+    else if (user.name === "Paper")
+      return computer.name === "Rock" ? "win" : "lose";
+  };
+
   return (
-    <div>
+    <div className="app-container">
       <div className="main">
-        <Box title="You" item={userSelect} />
-        <Box title="Computer" item={computerSelect} />
+        <Box title="You" item={userSelect} result={result} />
+        <Box title="Computer" item={computerSelect} result={result} />
       </div>
 
       <div className="main">
