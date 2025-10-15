@@ -17,5 +17,7 @@
 - ❓ **아무 선택 전엔 question mark(❓) 이미지와 결과 미출력**
 
 ---
-🛠️ 기술 스택(Tech Stack)
+## 🛠️ 기술 스택
 React, JavaScript, CSS
+
+---
