@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px black;
+    background-color: #292929;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    color: #eaeaea;
+    cursor: pointer;
+    padding: 16px;
+}
+
+.header-title:hover{
+    color: grey;
+}
+
+.search {
+    width: 400px;
+    height: 30px;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    padding: 5px;
+}

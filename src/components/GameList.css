@@ -1,0 +1,19 @@
+.game-list {
+    width: 80vw;
+    max-width: 1200px;
+    min-width: 340px;
+    border-radius: 20px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    margin-bottom: 32px;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 90%;
+  }
