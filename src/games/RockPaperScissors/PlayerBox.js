@@ -1,7 +1,7 @@
 import React from "react";
-import question_mark from "./img/question_mark.jpg";
+import question_mark from "./images/question_mark.jpg";
 
-const Box = (props) => {
+const PlayerBox = (props) => {
   let shouldShowResult = props.item && props.result;
   let result;
   if (
@@ -30,4 +30,4 @@ const Box = (props) => {
   );
 };
 
-export default Box;
+export default PlayerBox;
