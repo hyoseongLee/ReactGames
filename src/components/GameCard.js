@@ -4,7 +4,7 @@ import './GameCard.css'
 
 const GameCard = ({game}) => {
  return (
-  <Link to={game.route} className='game-card'>
+  <Link to={game.path} className='game-card'>
   <img src={game.img} alt={game.title} />
   <p>{game.title}</p>
   </Link>
