@@ -22,7 +22,7 @@ React, JavaScript, CSS
 
 ---
 
-#2. React 틱택토(Tic-Tac-Toe) 게임
+# 2. React 틱택토(Tic-Tac-Toe) 게임
 
 ---
 ## 소개
