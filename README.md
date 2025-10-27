@@ -20,7 +20,8 @@
 ## 🛠️ 기술 스택
 React, JavaScript, CSS
 
----
+
+
 
 # 2. React 틱택토(Tic-Tac-Toe) 게임
 
