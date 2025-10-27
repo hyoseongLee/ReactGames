@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     border-bottom: solid 1px black;
-    background-color: #292929;
+    background-color: var(--color-border);
 }
 
 .header-title {

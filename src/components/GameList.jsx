@@ -1,6 +1,6 @@
 import React from "react";
-import "./GameList.css";
-import GameCard from "./GameCard";
+import "../styles/GameList.css";
+import { GameCard } from "../components";
 
 const GameList = ({ games }) => {
   return (

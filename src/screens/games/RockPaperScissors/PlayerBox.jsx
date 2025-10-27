@@ -1,5 +1,8 @@
 import React from "react";
-import question_mark from "./images/question_mark.jpg";
+import { QuestionMark } from "../../../assets";
+import { logger } from "../../../utils";
+
+const gameLogger = logger.createLogger('RockPaperScissors');
 
 const PlayerBox = (props) => {
   let shouldShowResult = props.item && props.result;
@@ -15,14 +18,14 @@ const PlayerBox = (props) => {
     result = props.result;
   }
   if (props.title === "Computer") {
-    console.log("Computer", result);
+    gameLogger.log("Computer result:", result);
   }
   return (
     <div className={`box ${result ? ` ${result}` : ""}`}>
       <h1> {props.title}</h1>
       <img
         className="item-img"
-        src={props.item ? props.item.img : question_mark}
+        src={props.item ? props.item.img : QuestionMark}
         alt={props.item && props.item.name}
       />
       {result && props.item && <h2>{result}</h2>}
