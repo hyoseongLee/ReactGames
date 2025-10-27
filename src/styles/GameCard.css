@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #23232a;
+    background: var(--color-bg-dark);
     padding: 8px 4px 6px 4px;
     border-radius: 18px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
@@ -16,7 +16,7 @@
 .game-card:hover {
     transform: translateY(-6px) scale(1.04);
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.42);
-    background: #292936;
+    background: var(--color-bg-card);
 }
 
 /* 카드 이미지 */

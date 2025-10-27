@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./TicTacToe.css";
+import "../../../styles/TicTacToe.css";
 
 function Square({ value, onSquareClick }) {
   return (

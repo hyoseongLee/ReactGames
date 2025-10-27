@@ -1,11 +1,5 @@
-body {
-    background: #f5f7fa;
-    margin: 0;
-    min-height: 100vh;
-    font-family:'Pretendard', sans-serif;
-  }
-  
-  .game {
+.game {
+    background: var(--color-bg-light);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +29,7 @@ body {
     margin: 12px 0 20px 0;
     font-weight: 700;
     font-size: 1.7rem;
-    color: #2c3e50;
+    color: var(--color-text-dark);
     letter-spacing: 1px;
     text-align: center;
   }
@@ -50,7 +44,7 @@ body {
   .square {
     width: 70px;
     height: 70px;
-    border: 2px solid #7e57c2;
+    border: 2px solid var(--color-primary);
     background: #fafaff;
     color: #111;
     font-size: 2.4rem;
@@ -85,7 +79,7 @@ body {
     padding: 6px 14px;
     margin: 2px 0;
     border-radius: 8px;
-    border: 1px solid #7e57c2;
+    border: 1px solid var(--color-primary);
     background: #fafaff;
     transition: background 0.15s;
     cursor: pointer;
