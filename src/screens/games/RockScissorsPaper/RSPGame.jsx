@@ -1,9 +1,7 @@
-import "./RPSgame.css"
-import PlayerBox from "./PlayerBox";
+import "../../../styles/RSPGame.css"
+import PlayerBox from "./PlayerBox.jsx";
 import { useState } from "react";
-import Paper from "./images/Paper.jpg";
-import Rock from "./images/Rock.jpg";
-import Scissor from "./images/scissor.jpg"
+import { Paper, Rock, Scissor } from "../../../assets";
 
 // 1. 박스 2개 (타이틀,사진, 결과)
 //2. 가위 바위 보 버튼이 있다
@@ -27,7 +25,7 @@ const choice = {
   },
 };
 
-function App() {
+function RockScissorsPaper() {
   const [userSelect, setUserSelect] = useState(null);
   const [computerSelect, setComputerSelect] = useState(null);
   const [result, setResult] = useState(null);
@@ -73,4 +71,4 @@ function App() {
   );
 }
 
-export default App;
+export default RockScissorsPaper;

@@ -1,8 +1,8 @@
 import React from "react";
-import GameList from "../components/GameList";
-import games from "../data/Games";
-import "./Home.css";
-import useSearchStore from "../store/useStore";
+import { GameList } from "../components";
+import { games } from "../constants";
+import "../styles/Home.css";
+import { useSearchStore } from "../store";
 
 const Home = () => {
   const { searchText } = useSearchStore();
