@@ -1,8 +1,11 @@
 import React from "react";
-import "./Header.css";
+import "../styles/Header.css";
 import { Link } from "react-router-dom";
-import useSearchStore from "../store/useStore";
+import {useSearchStore} from "../store";
 import { Search } from "lucide-react";
+import { logger } from "../utils";
+
+const headerLogger = logger.createLogger('Header');
 
 const Header = () => {
   const { searchText, setSearchText } = useSearchStore();
@@ -12,8 +15,7 @@ const Header = () => {
       alert("검색어를 입력해주세요!");
       return;
     }
-    // 검색 실행 로직 여기에 추가
-    console.log("검색어:", searchText);
+   headerLogger.log("검색어:",searchText);
   };
 
   const handlerKeyDown = (event) => {
